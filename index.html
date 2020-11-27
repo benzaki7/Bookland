@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/583b2a8cc6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Book<span>land</span></a></h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+        </ul>
+
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <h2 class="section-title">Popular Books</h2>
+
+            <div class="books-container">
+
+                <article class="book">
+                    <img src="./img/1.jpg" alt="book cover">
+                    <h2>Life of Pi</h3>
+                        <h3>Author: Yann Martel</h3>
+                        <h3>Category: Adventure</h3>
+                        <h3>Price: $8.99</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/0156027321?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/4.jpg" alt="book cover">
+                    <h2>To Kill a Mockingbird</h3>
+                        <h3>Author: Harper Lee</h3>
+                        <h3>Category: Classics</h3>
+                        <h3>Price: $7.19</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/0060935464?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/7.jpg" alt="book cover">
+                    <h2>The Night Fire</h3>
+                        <h3>Author: Michael Connelly</h3>
+                        <h3>Category: Mystery</h3>
+                        <h3>Price: $14.99</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/0316485616?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/12.jpg" alt="book cover">
+                    <h2>Ninth House</h3>
+                        <h3>Author: Leigh Bardugo</h3>
+                        <h3>Category: Fantasy</h3>
+                        <h3>Price: $18.14</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/1250313074?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/15.jpg" alt="book cover">
+                    <h2>Bird Box</h3>
+                        <h3>Author: Josh Malerman</h3>
+                        <h3>Category: Horror</h3>
+                        <h3>Price: $6.99</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/B00FJ352U6?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/16.jpg" alt="book cover">
+                    <h2>Gone Girl</h3>
+                        <h3>Author: Gillian Flynn</h3>
+                        <h3>Category: Thriller</h3>
+                        <h3>Price: $15.30</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/0307588378?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/9.jpg" alt="book cover">
+                    <h2>And Then There Were None</h3>
+                        <h3>Author: Agatha Christie</h3>
+                        <h3>Category: Mystery</h3>
+                        <h3>Price: $7.99</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/0062073486?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+
+                <article class="book">
+                    <img src="./img/6.jpg" alt="book cover">
+                    <h2>Beloved</h3>
+                        <h3>Author: Toni Morrison</h3>
+                        <h3>Category: Classics</h3>
+                        <h3>Price: $12.19</h4>
+                            <button type="button"><a href="https://www.amazon.com/dp/1400033411?linkCode=ogi"
+                                    target="_blank">Shop Now</a></button>
+                </article>
+            </div>
+
+            <div class="modal">
+                <div class="content">
+                    <h3 id="book-name"></h3>
+                    <p id="book-decription"></p>
+                    <button type="button" id="shop-btn"><a id="shop-link" href="" target="_blank">Buy Now</a></button>
+                    <button id="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Benzaki Web Development Copyright &copy; 2020</p>
+    </footer>
+    <script src="app-index.js"></script>
+</body>
+
+</html>
