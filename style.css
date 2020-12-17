@@ -144,7 +144,7 @@ margin-left: 5vw;
 
 .book:hover {
     background-color:#f8fcfb;
-    transform: translateY(-15px);
+    /*transform: translateY(-15px);*/
 }
 .book:hover button{
     background-color: #ffd933;
