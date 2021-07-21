@@ -257,11 +257,5 @@ burger.addEventListener('click', function() {
     nav.classList.toggle('nav-active');
     burger.classList.toggle('burger-active')
 
-    navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = '';
-        } else {
-            link.style.animation = `navLinksFade 0.5s ease forwards ${index / 9 + 0.15}s`;
-        }
-    })
+
 })

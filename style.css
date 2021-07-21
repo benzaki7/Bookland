@@ -12,66 +12,64 @@
 
 header {
     width: 100%;
-    height: 8vh;
+    min-height: 8vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 50px;
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #ffebbc;
-    box-shadow: 0 1px 8px rgba(0,0,0,.25);
+    background-color: #3D405B;
+    
 }
 
-.logo {
-flex: 3;
-margin-left: 5vw;
-}
-.logo span {
-    font-size: 2rem;
-    font-weight: 400;
-}
 .logo a {
     font-size: 2rem;
     font-weight: 700;
-    color: #212121;
+    color: #FFFFFF;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 .nav-links {
-    flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 .nav-links a {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.3px;
-    padding-bottom: 5px;
-    border-bottom: 0px solid transparent;
-    color: #212121;
-    transition: border ease 0.3s;
+    padding: 0 2rem;
+    color: #FFFFFF;
+    transition: ease 0.3s;
 }
 .nav-links a:hover {
-    border-bottom: 1px solid #212121;
+    color: #D3D3D3;
 }
 
 .burger {
     font-size: 1.7rem;
     font-weight: 700;
-    color: #212121;
+    color: #FFFFFF;
     margin-right: 5vw;
     cursor: pointer;
     transition: ease .35s;
     display: none;
 }
-
+.burger i {
+    color: #FFFFFF;
+}
 .container {
     min-height: 86vh;
     width: 100%;
     padding-bottom: 80px;
-    background-color: #e8f1f5;
+    background-color: #E8E8E4;
     text-align: center;
 }
 
@@ -114,10 +112,11 @@ margin-left: 5vw;
     background-color: transparent;
     border-radius: 4px;
     outline: none;
-    transition: background-color ease .25s;
+    transition: ease .3s;
 }
 .btn:hover {
-    background-color:#ffebbc;
+    background-color:#3D405B;
+    color: #FFFFFF;
 }
 
 .books-container {
@@ -190,14 +189,15 @@ margin-left: 5vw;
 }
 .content{
     width: 70%;
-    height: 70%;
+    min-height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #e8f1f5;
+    background-color: #E8E8E4;
     position: relative;
-    padding: 30px;
+    padding: 50px;
+    overflow-y: auto;
 }
 
 #book-name {
@@ -255,7 +255,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #e8f1f5;
+    background-color: #E8E8E4;
     font-size: 1rem;
     font-weight: 600;
     padding: 20px;
@@ -267,14 +267,14 @@ footer {
 @media screen and (max-width: 1211px) {
     .content{
         width: 80%;
-        height: 80%;
+        min-height: 80%;
         padding: 20px;
     }
 }
 @media screen and (max-width: 761px) {
     .content{
         width: 80%;
-        height: 80%;
+        min-height: 80%;
     }
     #book-decription {
         font-size: 0.9rem;
@@ -283,25 +283,17 @@ footer {
 @media screen and (max-width: 636px) {
     .content{
         width: 80%;
-        height: 90%;
+        min-height: 90%;
         padding: 20px;
     }
 }
 @media screen and (max-width: 531px) {
     .content{
         width: 80%;
-        height: 90%;
-    }
-    #book-decription {
-        font-size: 0.8rem;
+        min-height: 90%;
     }
 }
 
-@media screen and (max-width: 996px) {
-    .logo {
-        flex: 2;
-        }
-}
 @media screen and (max-width: 650px) {
     .logo a{
         font-size: 1.8rem;
@@ -313,37 +305,23 @@ footer {
         right: 0;
         height: 92vh;
         width: 50%;
+        padding: 100px;
         z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #e8d5b7;
+        background-color: #3D405B;
         transform: translateX(100%);
         transition: transform ease .35s;
         }
 
-    .nav-links a {
-        opacity: 0;
-        }  
-
     .burger {
         display: block;
     }
-
 }
 
 .nav-active {
     transform: translateX(0%);
     transition: transform ease .35s;
-}
-
-.burger-active {
-    transform: rotate(-90deg);
-    transition: transform ease .35s;
-}
-
-@keyframes navLinksFade {
-    from {opacity: 0;}    
-    to {opacity: 1;} 
 }
