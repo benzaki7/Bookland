@@ -245,8 +245,6 @@ closeBtn.addEventListener('click', function(){
     modal.classList.remove('active');
 });
 
-
-
 //navbar
 
 const burger = document.querySelector('.burger');

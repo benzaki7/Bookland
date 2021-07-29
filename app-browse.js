@@ -267,12 +267,11 @@ function displayBtnCategories() {
         btn.addEventListener('click', function (e) {
             const category = e.currentTarget.dataset.id;
             const bookCategory = library.filter(function (book) {
-
                 if (book.category === category) {
                     return book;
                 };
             });
-
+            
             if (category === 'All Categories') {
                 displayBooksList(library);
             } else {

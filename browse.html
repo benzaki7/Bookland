@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.ico"/>
     <title>Bookland | Browse</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/583b2a8cc6.js" crossorigin="anonymous"></script>
@@ -12,17 +13,19 @@
 <body>
     <header>
         <div class="logo">
-            <h1><a href="index.html">Book<span>land</span></a></h1>
+            <h1>
+                <a href="index.html">Book<span>land</span></a>
+            </h1>
+        </div>
+
+        <div class="burger">
+            <i class="fas fa-bars"></i>
         </div>
 
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="browse.html">Browse</a></li>
         </ul>
-
-        <div class="burger">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
 
     <main>
@@ -35,7 +38,9 @@
                 <div class="content">
                     <h3 id="book-name"></h3>
                     <p id="book-decription"></p>
-                    <button type="button"id="shop-btn"><a id="shop-link" href="" target="_blank">Buy Now</a></button>
+                    <button type="button" id="shop-btn">
+                        <a id="shop-link" href="" target="_blank">Buy Now</a>
+                    </button>
                     <button id="close-btn"><i class="fas fa-times"></i></button>
                 </div>
             </div>
